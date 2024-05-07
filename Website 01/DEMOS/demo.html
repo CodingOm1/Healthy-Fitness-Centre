@@ -1,4 +1,11 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Videos </title>
+<style>
+  
 /* Import Google font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
@@ -85,7 +92,11 @@ nav ul li a:hover{
   transform: translateY(-6px);
   font-size: 1.2rem;
 }
-
+#activeLink{
+  color: #398dfa;
+  border-bottom: 2px solid #398dfa;
+  transform: translateY(-6px);
+}
 nav .menu_items{
   transition: .2s ease-in-out;
 }
@@ -154,204 +165,6 @@ nav .menu_items{
 }
 
 
-
-
-/* section home */
-
-#home {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-.main-haedings {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: space-between;
-  padding: 25px 25px;
-  gap: 12px;
-}
-.h1 h2 {
-  font-size: 2.2rem;
-  font-weight: 600;
-}
-.h1 h2 span {
-  color: #398dfa;
-}
-.p p {
-  font-size: 1.2rem;
-  font-weight: lighter;
-  line-height: 1.4;
-  max-width: 800px;
-}
-.btns{
-  padding: 15px;
-}
-.btns a{
-  text-decoration: none;
-  color: #fff;
-}
-
-.btns button {
-  width: 7rem;
-  height: 2.5rem;
-  outline: none;
-  border-radius: 9px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  border: 2px solid #398dfa;
-  background: #398dfa;
-  color: #fff;
-  font-size: 0.98rem;
-  transition: .2s ease-in-out;
-  cursor: pointer;
-}
-
-.btns button:hover {
-  background: #fff;
-  color: #398dfa;
-  transform: translateY(-8px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Modern shadow effect */
-}
-.main-logo {
-  margin-right: 25px;}
-  .main-logo img{
-    border-radius: 12px;
-}
-
-
-@media screen and (max-width: 920px) {
-  #home{
-    flex-direction: column-reverse;
-
-  }  
-}
-@media screen and (max-width: 515px) {
-  .h1 h2 {
-    font-size: 1.6rem;
-  }  
-  .p p {
-    font-size: 0.96rem;
-  }
-  .main-logo img {
-    width: 300px;
-  }
- .hamburger{
-  font-size: 1.5rem;
- }
- nav label h2 
- {
-  font-size: 0.98rem;
- }
- .hamburger i{
-  font-size: 1.8rem;
- }
-}
-
-#people{
-  min-height: 100vh;
-  background: #fff;
-}
-#countdown {
-  font-size: 36px;
-  color: #333;
-  animation: countdown 2s ease-in-out forwards;
-}
-
-@keyframes countdown {
-  0% { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-/* Services Content  */
-
-.services {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px;
-  background: #fafafa;
-  min-height: 100vh;
-}
-.service{
-  display: flex;
-  padding: 50px 50px;
-  align-items: center;
-  gap: 25px;
-  border-top: 2px solid #333;
-  border-bottom: 2px solid #333;
-  justify-content: center;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.service-2 {
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 50px 50px;
-  align-items: center;
-  gap: 25px;
-  justify-content: center;
-  font-family: 'Ubuntu', sans-serif;
-}
-.service .service-info{
-  display: flex;
-  flex-direction: column;
-}
-.service-info h1{
-  font-size: 2.4rem;
-  font-weight: 700;
-  max-width: 600px;
-}
-.service-info p{
-  font-size: 1.04rem;
-  margin-top: 15px;
-  font-weight: 400;
-  line-height: 1.5;
-  max-width: 500px;
-}
-.images-service img{
-  mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent); /* For Safari */
-
-}
-@media (max-width:959px) {
-  .service {
-      flex-direction: column;
-  }
-  .service-2 {
-      flex-direction: column;
-  }
-}
-@media screen and (max-width: 581px) {
-  .service,
-  .service-2 {
-      flex-direction: column;
-      padding: 30px;
-      text-align: center;
-  }
-  
-  .service .service-info h1,
-  .service-2 .service-info h1 {
-      font-size: 2rem; /* Adjust heading font size */
-      margin-bottom: 10px; /* Add margin below heading */
-  }
-  
-  .service .service-info p,
-  .service-2 .service-info p {
-      font-size: 1rem; /* Adjust paragraph font size */
-      margin-top: 10px; /* Reduce margin top */
-      max-width: 350px; /* Remove max-width */
-  }
-  
-  .images-service img {
-      width: 250px;
-  }
-}
 
 
 
@@ -427,59 +240,59 @@ nav .menu_items{
   color: #ffffff; /* Hover text color */
   transform: translateY(-8px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 1px 5px rgba(0, 0, 0, 0.08);  cursor: pointer; /* Cursor style */
-
 }
-#activeLink{
-  color: #398dfa;
-  border-bottom: 2px solid #398dfa;
-  transform: translateY(-6px);
-}
-footer {
-  background-color: #333333;
-  color: #fff;
-  padding: 40px 0;
-  text-align: center;
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.footer-left,
-.footer-right {
-  flex-basis: 45%;
-}
-
-.footer-left h3,
-.footer-right h3 {
-  margin-bottom: 20px;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.social-icons a {
-  color: #fff;
-  font-size: 24px;
-  margin: 0 10px;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #398dfa;
-}
-
-.ad-container {
-  margin-top: 20px; /* Adjust the top margin to create space between the ad and the content */
-  text-align: center; /* Center the ad */
-}
-
-/* Additional styling for the ad if needed */
-
+</style>
+</head>
+<body>
+  <nav>
+    <label for="heading and logo">
+      <img src="../images/Logo.png" alt="Error to load image..!">
+      <h2>Mauli Wellness Center</h2>
+    </label>
+    <ul class="menu_items">
+      <li><a href="../index.html">Home</a></li>
+      <li><a  href="../Contact/contact.html">Contact us</a></li>
+      <li><a id="activeLink" href="DEMOS/demo.html">Demo</a></li>
+    </ul>      
+    <label for="toogle" class="hamburger">
+      <i class='bx bx-menu'></i>
+    </label>
+  </nav>
+     <section id="demo">
+      
+    <h2>Workout Demos</h2>
+    <div class="demo-content">
+      <div class="demo">
+        <video width="414px" controls  >
+          <source type="video/mp4" src="video/Gym WordPress Theme Homepage Background Video by Visualmodo.mp4">
+        </video>
+      </div>
+      <div class="demo">
+        <video width="414px" controls >
+          <source type="video/mp4" src="video/Gym WordPress Theme Homepage Background Video by Visualmodo.mp4">
+        </video>
+      </div>
+      <div class="demo">
+        <video width="414px" controls >
+          <source type="video/mp4" src="video/Gym WordPress Theme Homepage Background Video by Visualmodo.mp4">
+        </video>
+      </div>
+      <div class="demo">
+        <video width="414px" controls >
+          <source type="video/mp4" src="video/Gym WordPress Theme Homepage Background Video by Visualmodo.mp4">
+        </video>
+      </div>
+      <div class="demo">
+        <video width="414px" controls >
+          <source type="video/mp4" src="video/Gym WordPress Theme Homepage Background Video by Visualmodo.mp4">
+        </video>
+      </div>
+      <div class="demo">
+        <video width="414px" controls >
+          <source type="video/mp4" src="video/Gym WordPress Theme Homepage Background Video by Visualmodo.mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

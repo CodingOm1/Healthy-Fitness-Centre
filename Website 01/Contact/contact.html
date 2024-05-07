@@ -10,14 +10,187 @@
         body {
             background: linear-gradient(45deg, rgb(255, 0, 234), rgb(248, 117, 237), rgb(240, 198, 233));
         }
+        /* Import Google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #acc9ff; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #274eb9; /* Color of the thumb */
+  border-radius: 5px; /* Radius of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #274eb9; /* Color of the thumb on hover */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+}
+
+nav {
+  height: 85px;
+  background: transparent;
+  backdrop-filter: blur(9px);
+  display: flex;
+  position: sticky;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 15px;
+  color: #ffffff;
+}
+nav label img {
+  width: 70px;
+  border-radius: 50%;
+}
+nav label h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-left: 5px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 15px;
+  color: #ffffff;
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px;
+  list-style: none;
+}
+nav ul li a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: .2s all;
+  color: #ffffff;
+}
+nav ul li a:hover{
+  color: #398dfa;
+  border-bottom: 2px solid #398dfa;
+  transform: translateY(-6px);
+  font-size: 1.2rem;
+}
+
+nav .menu_items{
+  transition: .2s ease-in-out;
+}
+
+#activeLink{
+  color: #398dfa;
+  border-bottom: 2px solid #398dfa;
+  transform: translateY(-6px);
+}
+/* responsive */
+.hamburger {
+  font-size: 2.8rem;
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  display: none;
+}
+@media (max-width: 914px) {
+  nav label h2 {
+    font-size: 1.7rem;
+  }
+  
+}
+
+@media screen and (max-width: 880px) {
+  nav label h2 {
+    font-size: 1.7rem;
+  }
+  
+  nav ul {
+    display: none;
+  }
+  
+  nav .hamburger {
+    display: inline-flex;
+    font-size: 2.8rem;
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    padding: 25px 15px;
+  }
+  nav .menu_items.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:100%;
+    right: 0;
+    margin-right: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  nav .menu_items.show li {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 475px) {
+  nav label h2 {
+    font-size: 1.2rem;
+  }
+  nav label img {
+    width: 60px;
+  }
+  
+}
+
+
+
     </style>
 </head>
 <body>
+  <nav>
+    <label for="heading and logo">
+      <h2>Mauli Wellness Center</h2>
+    </label>
+    <ul class="menu_items">
+      <li><a href="../index.html">Home</a></li>
+      <li><a id="activeLink" href="../Contact/contact.html">Contact us</a></li>
+      <li><a  href="../DEMOS/demo.html">Demo</a></li>
+    </ul>      
+    <label for="toogle" class="hamburger">
+      <i class='bx bx-menu'></i>
+    </label>
+  </nav>
         <form  action="https://api.web3forms.com/submit" method="POST">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-12">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We will meet soon..!</p>
           </div>
           <input type="hidden" name="access_key" value="a904cf79-a113-48ec-a875-1d6813dda072">
           <div class="lg:w-1/2 md:w-2/3 mx-auto">

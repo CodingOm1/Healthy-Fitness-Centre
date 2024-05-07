@@ -2,226 +2,179 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts Link For Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <script src="script.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/Logo.png" sizes="32x32" type="x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <style>
-      .nav-links {
-          display: none;
-      }
-      /* Toggle nav-links visibility when menu button is clicked */
-      #menu-toggle:checked + .nav-links {
-          display: flex;
-      }
-  </style>
     <title>MAULI FITNESS CENTER</title>
 </head>
 <body>    
-    <!-- <button class="chatbot-toggler">
-      <span class="material-symbols-rounded">mode_comment</span>
-      <span class="material-symbols-outlined">close</span>
-    </button>
-    <div class="chatbot">
-      <header>
-        <h2>Chatbot</h2>
-        <span class="close-btn material-symbols-outlined">close</span>
-      </header>
-      <ul class="chatbox">
-        <li class="chat incoming">
-          <span class="material-symbols-outlined">smart_toy</span>
-          <p>Hi there 👋<br>How can I help you today?</p>
-        </li>
-      </ul>
-      <div class="chat-input">
-        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
-        <span id="send-btn" class="material-symbols-rounded">send</span>
-      </div>
-    </div> -->
+<!-- Sockets and local storage -->
 
-    <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <img src="images/Logo.svg" width="15%" alt="Network error">
-            <span class="ml-3 text-xl">MAULI FITNESS CENTER</span>
-                    </a>
-          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-            <a href="index.html" class="mr-5 hover:text-gray-900">HOME</a>
-            <a href="Contact/contact.html" class="mr-5 hover:text-gray-900">CONTACT US</a>
-            <a href="Ecommerce/pot.html" class="mr-5 hover:text-gray-900">DEMO</a>
-          </nav>
+
+    <nav>
+      <label for="heading and logo">
+        <img src="images/Logo.png" alt="Error to load image..!">
+        <h2>Mauli Wellness Center</h2>
+      </label>
+      <ul class="menu_items">
+        <li><a id="activeLink"  href="index.html">Home</a></li>
+        <li><a href="Contact/contact.html">Contact us</a></li>
+        <li><a href="DEMOS/demo.html">Demo</a></li>
+        <!-- <li><a href="#">Sign up</a></li> -->
+      </ul>      
+      <label for="toogle" class="hamburger">
+        <i class='bx bx-menu'></i>
+      </label>
+    </nav>
+ 
+    
+    <!-- section home -->
+    <section id="home">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3716294819428220"
+      crossorigin="anonymous"></script>
+ <!-- verticle -->
+ <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-3716294819428220"
+      data-ad-slot="6315888417"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+ <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+      <div class="main-haedings">
+        <div class="h1">
+          <h2>Welcome in<span> Fittness Center</span></h2>
         </div>
-      </header>
-      <section class="text-gray-600 body-font sec1">
-        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="images/My-Profile.png">
-          <div class="text-center lg:w-2/3 w-full">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Welcome To In Fitness Center..!</h1>
-            <p class="mb-8 leading-relaxed">Hi My Name is <b>ASARAM NAMDEO WAGHMARE</b> AND is my wife <b>LAXMI ASARAM WAGHMARE</b>. We need health with proper body maintain, but where? Yes you are in best platform. Online and Free....Free...  Workout And diet with proper Guidance with Separate Coaches. Contact us to gain health.</p>
-            <div class="flex justify-center">
-              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="Contact/contact.html">Contact</a></button>
-              <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"><a>Learn more</a></button>
+        <div class="p">
+          <p>Welcome to our state-of-the-art fitness center, where your journey to a healthier, stronger you begins. Whether you're a seasoned athlete or new to fitness, we're here to support and inspire you every step of the way.</p>
+
+        </div>
+        <div class="btns">
+          <a href="https://wa.me/+918208844066"><button><i class='bx bxl-whatsapp'></i><span>Whatsapp</span></button></a>
+        </div>
+      </div>
+      <div class="main-logo">
+        <img src="images/My-Profile.png" width="350px" alt="Error to load image">
+      </div>
+    </section>
+
+      <!-- <section id="people">
+        
+        <div id="countdown">115+</div>
+
+      </section> -->
+      <section class="services" >
+       
+        <div class="service ">
+            <div class="service-info" data-aos="fade-left">
+                <h1>Free Cardio workout from Home</h1>
+                <p>Harness the power of your living room with our free cardio workout from home, ensuring fitness is just a step away.Transform your home into a fitness sanctuary with our complimentary cardio workout sessions, designed to elevate your heart rate and energize your day.</p>
             </div>
-          </div>
+            <div class="images-service" data-aos="fade-right">
+                <img width="450px" src="images/workout.jpg" alt="Error to load image">
+            </div>
         </div>
+        <div class="service-2">
+            <div class="service-info" data-aos="fade-right">
+                <h1>Online from home by ZOOM Virtual</h1>
+                <p>Experience the convenience of online sessions from the comfort of your home, powered by ZOOM Virtual, bringing your fitness goals closer, virtually.</p>
+            </div>
+            <div class="images-service" data-aos="fade-left">
+                <img width="450px" src="images/zoom.jpg" alt="Error to load image">
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-info" data-aos="fade-left">
+                <h1>Free Health check report</h1>
+                <p>Unlock a healthier you with our complimentary health check report, providing insights and guidance to optimize your well-being, free of charg.
+               </p>            </div>
+            <div class="images-service" data-aos="fade-right">
+                <img width="450px" src="images/bmi.jpg" alt="Error to load image">
+            </div>
+        </div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3716294819428220"
+        crossorigin="anonymous"></script>
+    <!-- Veetical add for 01 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3716294819428220"
+        data-ad-slot="9975065854"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </section>
+  <section id="demo">
+    <!-- <main>
+      <section id="mega-event">
+        <h2>Mega Event</h2>
+        <p>Morning Workout 15/07/2022 at 5:30 am</p>           <div class="demo-content">
+              <div class="demo">
+                  <video width="414px" controls>
+                      <source type="video/mp4" src="../images/Gym WordPress Theme Homepage Background Video by Visualmodo.mp4">
+                  </video>
+              </div>
+          </div>
       </section>
-      <section class="text-gray-600 body-font sec2">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Money can't give Health, but Health Gives Money..!</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Our Facilities and profit which is best for any person. This For Everyone.</p>
-          </div>
-          <div class="flex flex-wrap -m-4">
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="images/workout.jpg">
-                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Workout</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Daily Workout</h1>
-                  <p class="leading-relaxed">Today's need is Workout and it always need for Everyone.</p>
-                </div>
-              </div>
-            </div>
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="images/Diet.jpg">
-                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Diet</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Proper Diet from Coach</h1>
-                  <p class="leading-relaxed">Our body is on way to Unheealth Because of junk food and unneed Diet. ThereFore Your Coach givse you proper diet..!</p>
-                </div>
-              </div>
-            </div>
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="images/zoom.jpg">
-                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Virtual Zoom</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Home Business</h1>
-                  <p class="leading-relaxed">Workout, Diet etc. you Not have to come where , We all works can do Home By Virtual Zoom Meeting.</p>
-                </div>
-              </div>
-            </div>
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="images/bmi.jpg">
-                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Body Checkup</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">BMI report</h1>
-                  <p class="leading-relaxed">Free BMI report in your Home by your coach.Yes Your Body checkup is free and coach come on your home.</p>
-                </div>
-              </div>
-            </div>
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="images/Money.jpg">
-                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Unlimited Money</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Monthly income by Company</h1>
-                  <p class="leading-relaxed">You can fit your body and earn money monthly not only thousands also lakhs. So Don't Give up.</p>
-                </div>
-              </div>
-            </div>
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="images/free.png">
-                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Free..!Free..!</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Free All</h1>
-                  <p class="leading-relaxed">Workout,Diet,BMI all of you not have any fees , This all of free..!</p>
-                </div>
-              </div>
-            </div>
-          </div>
+  </main> -->
+    <h2>Workout Demos</h2>
+    <div class="demo-content">
+      <div class="demo">
+        <video width="414px" controls  >
+          <source type="video/mp4" src="images/Gym WordPress Theme Homepage Background Video by Visualmodo.mp4">
+        </video>
+      </div>
+      <div class="demo">
+        <video width="414px" controls >
+          <source type="video/mp4" src="images/Gym WordPress Theme Homepage Background Video by Visualmodo.mp4">
+        </video>
+      </div>
+      <div class="demo">
+        <video width="414px" controls >
+          <source type="video/mp4" src="images/Gym WordPress Theme Homepage Background Video by Visualmodo.mp4">
+        </video>
+      </div>
+      <div class="demo">
+        <video width="414px" controls >
+          <source type="video/mp4" src="images/Gym WordPress Theme Homepage Background Video by Visualmodo.mp4">
+        </video>
+      </div>
+      <div class="demo">
+        <video width="414px" controls >
+          <source type="video/mp4" src="images/Gym WordPress Theme Homepage Background Video by Visualmodo.mp4">
+        </video>
+      </div>
+      <div class="demo">
+        <video width="414px" controls >
+          <source type="video/mp4" src="images/Gym WordPress Theme Homepage Background Video by Visualmodo.mp4">
+        </video>
+      </div>
+      <a href="DEMOS/demo.html"><button id="showMoreBtn">Show More</button></a>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+        <div class="footer-left">
+            <h3>Contact Us</h3>
+            <p>Email: asaramwaghmare01@gmail.com</p>
+            <p>Phone: +91 9423248870</p>
         </div>
-      </section>
-      <section class="text-gray-600 body-font sec3">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">My Team</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">My Team is my Power And Power makes me Enrgitic.</p>
-          </div>
-          <div class="flex flex-wrap -m-4">
-            <div class="p-4 lg:w-1/2">
-              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200">
-                <div class="flex-grow sm:pl-8">
-                  <h2 class="title-font font-medium text-lg text-gray-900">Holden Caulfield</h2>
-                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
-                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
-                  
-                </div>
-              </div>
+        <div class="footer-right">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
             </div>
-            <div class="p-4 lg:w-1/2">
-              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/201x201">
-                <div class="flex-grow sm:pl-8">
-                  <h2 class="title-font font-medium text-lg text-gray-900">Alper Kamu</h2>
-                  <h3 class="text-gray-500 mb-3">Designer</h3>
-                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
-                 
-                </div>
-              </div>
-            </div>
-            <div class="p-4 lg:w-1/2">
-              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/204x204">
-                <div class="flex-grow sm:pl-8">
-                  <h2 class="title-font font-medium text-lg text-gray-900">Atticus Finch</h2>
-                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
-                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
-                  
-                </div>
-              </div>
-            </div>
-            <div class="p-4 lg:w-1/2">
-              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/206x206">
-                <div class="flex-grow sm:pl-8">
-                  <h2 class="title-font font-medium text-lg text-gray-900">Henry Letham</h2>
-                  <h3 class="text-gray-500 mb-3">Designer</h3>
-                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-      <footer class="text-gray-600 body-font">
-        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            <img src="images/Logo.png" width="15%" alt="">
-            <span class="ml-3 text-xl">MAULI FITNESS CENTER</span>
-          </a>
-          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 asaramwaghmare01 —
-            <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@asaramwaghmare01</a>
-          </p>
-          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <a class="text-gray-500">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-              </svg>
-            </a>
-          
-            <a href="https://www.instagram.com/aesthetic_reesl_01/?next=%2Fi5_gamer_321%2F" class="ml-3 text-gray-500">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-              </svg>
-            </a>
-           
-          </span>
-        </div>
-      </footer>
-      <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/7994faf2-3d7f-41d9-9a5e-7fda63eb3f9b/webchat/config.js" defer></script>
+    </div>
+</footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
